@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+int t,x;
+std::cin >>t;
+while(t--){
+    cin>> x;
+    if(x== 12){
+        cout<< "No\n";
+    }
+    else if((x+3)<= 10){
+        cout<< "Yes\n";
+    }
+    else
+    {
+        cout<< "No\n";
+    }
+}
+
+}
