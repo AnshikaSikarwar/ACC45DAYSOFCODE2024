@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y;
+	    cin>>x>>y;
+	    bool flag=true;
+	    int count=0;
+	    while(true){
+	        if(x<y){
+	            x=x+2;
+	            y=y+1;
+	            count++;
+	        }
+	        else if(x>y){
+	            x=x-2;
+	            y=y-1;
+	            count++;
+	        }
+	        else if(x==y){
+	            cout<<count<<endl;
+	            flag=false;
+	            break;
+	        }
+	        
+	    }
+	}
+
+}
