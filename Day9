@@ -1,0 +1,56 @@
+EASY PROBLEM-
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n,x;
+	    cin>>n>>x;
+	    int y=n-x;
+	    if(x<y)
+	    cout<<x<<endl;
+	    else
+	    cout<<y<<endl;
+	}
+
+}
+
+
+INTERMEDIATE PROBLEM-
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    string s;
+	    cin>>s;
+	    int flag=1;
+	    for(int i=0;i<n;i++){
+	        if(s[i]=='Y'){
+	            cout<<"NOT INDIAN"<<endl;
+	            flag=0;
+	            break;	        
+	        }
+	        else if(s[i]=='I'){
+	            cout<<"INDIAN"<<endl;
+	            flag=0;
+	            break;	        
+	        }
+             
+             
+	    }
+	    if(flag==1)cout<<"NOT SURE"<<endl;
+	    
+	}
+	return 0;
+
+}
